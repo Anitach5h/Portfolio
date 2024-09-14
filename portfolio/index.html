@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="icons/nuevos-iconos.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Anabela</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/IMG_bk.JPG" alt="">
+            </div>
+            <h1>ANABELA GALLEGOS</h1>
+            <h2>Desarrolladora Full Stack</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/anitach5h/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://github.com/Anitach5h"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anabela-gallegos/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:anabelagallegos0@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Anabela Gallegos.</span> Soy una Desarrolladora Full Stack
+                con una sólida base en Administración y
+                Gestión de Empresas, lo que ha forjado mi
+                personalidad versátil y mi capacidad de
+                adaptación a entornos cambiantes.
+                Aunque mi interés en la gestión sigue
+                siendo una parte importante de mi carrera,
+                he encontrado en la programación un
+                apasionante desafío que me motiva a
+                seguir creciendo. Me comprometo a
+                perfeccionar mis habilidades
+                constantemente a través de la formación
+                continua y la investigación de nuevas
+                herramientas y tecnologías.
+                Estoy emocionada por la oportunidad de
+                formar parte de un equipo donde pueda
+                aportar mis habilidades y al mismo tiempo
+                continuar aprendiendo y creciendo
+                profesionalmente</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-11-1985
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            2241 581975
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            anabelagallegos0@gmail.com
+                        </li>
+                        <li>
+                            <strong>LinkedIn</strong>
+                            www.linkedin.com/in/anabela-gallegos
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Chascomús, Buenos Aires, Argentina
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>TREKKING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-paw"></i>
+                            <span>ANIMALES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>TECNOLOGIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-pagelines"></i>
+                            <span>NATURALEZA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a class="download-link" href="img/CV_AG.pdf" download="nombre-del-archivo.pdf">Descargar CV <i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    
+
+        
+
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Typescript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tailwind</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>66%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DJANGO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>NODE JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Scrum</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Idiomas -->
+                <div class="col">
+                    <h3>Idiomas</h3>
+                    <div class="skill">
+                        <span>Español</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ingles</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Portugues</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Frances</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Programacion Full Stack- Node JS</h4>
+                        <span class="casa">Agencia de Aprendizaje Codo a Codo</span>
+                        <span class="fecha">2024 </span>
+                        <p>HTML/ CSS/ GIT/ Diseño/ Bootstrap/ JS/
+                            Arquitectura / SQL / Scrum / Node js/ Express</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programacion Full Stack- Python</h4>
+                        <span class="casa">Facultad de Ingenieria UBA- Argentina Programa</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>HTML/ CSS / JS / JSX /React / Next / Python /
+                            SQL / DRF?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diseno Web</h4>
+                        <span class="casa">Fundacion Telefonica</span>
+                        <span class="fecha">2023</span>
+                        <p>HTML 5 - CSS - JS</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>OTROS CURSOS</h4>
+                        <span class="casa">UTN - CAC</span>
+                        <p>Gestion de PymeS <BR>
+                            Programacion Neuro Linguistica (PNL)<br>
+                            Administracion Eficaz del Tiempo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>ESTUDIOS SECUNDARIOS</h4>
+                        <span class="casa">Instituto Corazon de Maria</span>
+                        <p>Bachiller en Economia y Gestion </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer </h4>
+                        <span class="casa">QUINTO IMPACTO - Semillero Latam</span>
+                        <span class="fecha">2024</span>
+                        <p>Diseño app web: REACT-JS -MUI -MARIADB- GITEA-AXIOS-SCRUM
+                           </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer / Product Owner</h4>
+                        <span class="casa">AWAQ ONGD</span>
+                        <span class="fecha">2024</span>
+                        <p>Diseño pagina web: React / Typescript/
+                            Tailwind/ Github<br>
+                            PRODUCT OWNER de pagina principal del proyecto</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                   
+                    <div class="item der">
+                        <h4>Administracion y Ventas</h4>
+                        <span class="casa">Club de Campo el Mirador</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Gestión de cobranzas, compras y pagos a proveedores,  supervisión de obras, control de autorizaciones, seguros y antecedentes penales, organización de spa, control de gastos y revisión de cuentas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                     <div class="item der">
+                            <h4>Gerencia Administrativa</h4>
+                            <span class="casa">Sanitarios Carosio</span>
+                            <span class="fecha">2012 - 2020</span>
+                            <p> Presupuestacion, gestion de finanzas, analisis de informes, supervisión de procedimientos contables, asuntos tributarios, gestión de proveedores y materiales. Presentación de informes mensuales, tareas contables, análisis de cuentas, pagos. Coordinación de equipo administrativo</p>
+                            <div class="conectord">
+                                <div class="circulod">
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>     
+       
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/landing_gastro.png" alt="">
+                    <div class="overlay">
+                        <h3>App Gastronomica</h3>
+                        <p>Desarollo Front-End: -React 
+                            -JSX
+                            - CSS   
+                            - Fetch API  
+                            - Flex Layout  
+                            - Modal</p>
+                            <p>Link :<a href="https://lnkd.in/di_wpqeC">Landing - Gastro</a></p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Biblioteca_Digital.png" alt="Biblioteca_Virtual">
+                    <div class="overlay">
+                        <h3>Biblioteca Virtual</h3>
+                        <p><a href="https://is2095.github.io/Biblioteca-Virtual/">Link a Biblioteca Virtual</a></p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/santa_juana.png" alt="desarrollo_web">
+                    <div class="overlay">
+                        <h3>Pagina web rural</h3>
+                        <p>React - CSS - JSX</p>
+                        <p>Demo:<a href="https://www.webmobilefirst.com/en/screencasts/xK3vaXZE4r/">Santa Juana</a></p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Ubuntu.png" alt="desarrollo_web">
+                    <div class="overlay">
+                        <h3>Ubuntu</h3>
+                        <p>React - JSX- MUI -AXIOS -JAVA- MARIADB</p>
+                       
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <form action="enviar_formulario.php" method="post" class="col">
+                    <input type="text" name="nombre" placeholder="Tú Nombre">
+                    <input type="text" name="telefono" placeholder="Número telefónico">
+                    <input type="text" name="correo" placeholder="Dirección de correo">
+                    <input type="text" name="tema" placeholder="Tema">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                <div class="col">
+                    <img src="img/contacto_ani.jpg" alt="comunicate">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Chascomús, Buenos Aires, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Whatsapp: 2241 - 581975 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: anabelagallegos0@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/anitach5h/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://github.com/Anitach5h"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anabela-gallegos/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:anabelagallegos0@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
